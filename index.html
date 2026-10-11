@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Baskar Raj | Full-Stack Developer (MERN)</title>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&family=Caveat:wght@500&display=swap" rel="stylesheet">
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+<link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css" rel="stylesheet">
+<link href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.16.0/devicon.min.css" rel="stylesheet">
+<link href="css/style.css" rel="stylesheet">
+<script>setTimeout(function(){ if(!window.__ok) document.documentElement.classList.add('nojs') }, 2500)</script>
+</head>
+<body>
+<div id="progress"></div>
+
+<!-- Sidebar (expands on hover) -->
+<aside id="side" aria-label="Section navigation">
+  <a class="logo" href="#home">BR</a>
+  <nav>
+    <a href="#home"><i class="bi bi-house"></i><span>Home</span></a>
+    <a href="#about"><i class="bi bi-person"></i><span>About</span></a>
+    <a href="#journey"><i class="bi bi-signpost-split"></i><span>Journey</span></a>
+    <a href="#skills"><i class="bi bi-code-slash"></i><span>Skills</span></a>
+    <a href="#certs"><i class="bi bi-patch-check"></i><span>Certifications</span></a>
+    <a href="#projects"><i class="bi bi-folder2-open"></i><span>Projects</span></a>
+    <a href="#contact"><i class="bi bi-envelope"></i><span>Contact</span></a>
+  </nav>
+</aside>
+
+<!-- Scroll guide avatar -->
+<div id="guide" aria-hidden="true">
+  <div class="bubble" id="bubble">Hi! Scroll with me</div>
+  <div class="bot"><i class="eye"></i><i class="eye"></i></div>
+  <div class="track"><i id="trackFill"></i></div>
+  <small>Scroll</small>
+</div>
+
+<!-- Section indicator -->
+<div id="dots" aria-hidden="true"></div>
+
+<!-- Floating buttons -->
+<div class="fabs">
+  <button id="themeBtn" class="fab" aria-label="Toggle theme"><i class="bi bi-moon-stars"></i></button>
+  <button id="topBtn" class="fab" aria-label="Back to top"><i class="bi bi-arrow-up"></i></button>
+</div>
+
+<header class="navbar navbar-expand-lg sticky-top topbar">
+  <div class="container-xl">
+    <a class="navbar-brand d-flex align-items-center gap-2" href="#home">
+      <span class="mark">BR</span>
+      <span class="lh-1"><b>BASKAR RAJ</b><small class="d-block text-muted">Full-Stack Developer | MERN Stack</small></span>
+    </a>
+    <button class="navbar-toggler border-0" data-bs-toggle="collapse" data-bs-target="#nav"><i class="bi bi-list fs-2"></i></button>
+    <div id="nav" class="collapse navbar-collapse">
+      <ul class="navbar-nav mx-auto gap-lg-3">
+        <li><a class="nav-link" href="#home">Home</a></li><li><a class="nav-link" href="#about">About</a></li>
+        <li><a class="nav-link" href="#journey">Journey</a></li><li><a class="nav-link" href="#skills">Skills</a></li>
+        <li><a class="nav-link" href="#certs">Certifications</a></li><li><a class="nav-link" href="#projects">Projects</a></li>
+        <li><a class="nav-link" href="#contact">Contact</a></li>
+      </ul>
+      <a href="BaskarRaj_Resume.pdf" download class="btn btn-outline-dark btn-pill btn-sm"><i class="bi bi-download me-1"></i>Download Resume</a>
+    </div>
+  </div>
+</header>
+
+<main>
+<!-- HERO -->
+<section id="home" class="sec hero" data-hint="Welcome! Let's begin">
+  <i class="leaf l1"></i><i class="leaf l2"></i><i class="wave"></i>
+  <div class="container-xl position-relative">
+    <div class="row align-items-center g-4">
+      <div class="col-lg-6 reveal">
+        <div class="status-pill"><span><i class="bi bi-code-slash"></i>MERN Stack Developer</span><span><i class="dot"></i>Available for Opportunities</span></div>
+        <p class="hello">Hello, I'm</p>
+        <h1 class="name">Baskar Raj</h1>
+        <h2 class="role">Full-Stack Developer <b class="bar"></b> <span class="text-brand">AI/ML enthusiast</span></h2>
+        <p class="lead-p">I build web applications that solve real problems, turning ideas into smooth, scalable and user-friendly products.</p>
+        <div class="d-flex flex-wrap gap-3 my-4">
+          <a href="#projects" class="btn btn-brand btn-pill btn-lg-hero"><i class="bi bi-person-workspace me-2"></i>View My Projects <i class="bi bi-arrow-right ms-2"></i></a>
+          <a href="BaskarRaj_Resume.pdf" download class="btn btn-outline-brand btn-pill btn-lg-hero"><i class="bi bi-download me-2"></i>Download Resume</a>
+        </div>
+        <div class="techs">
+          <div><span><i class="devicon-react-original colored"></i></span>React</div>
+          <div><span><i class="devicon-nodejs-plain colored"></i></span>Node.js</div>
+          <div><span><i class="devicon-mongodb-plain colored"></i></span>MongoDB</div>
+          <div><span><i class="devicon-express-original"></i></span>Express</div>
+          <div><span><i class="devicon-python-plain colored"></i></span>Python</div>
+        </div> 
+      </div>
+      <div class="col-lg-6 reveal d-delay">
+        <div class="photo2">
+          <div class="hnote n1">Code<br>Build<br>Grow<svg viewBox="0 0 110 40"><path d="M2 36 C40 30 70 20 104 8 M92 6 L105 8 L98 19"/></svg></div>
+          <i class="pl pl1"></i><i class="pl pl2"></i>
+          <div class="blobframe"><img class="me" src="img/baskar_portfolio_transparent_4k.png" alt="Baskar Raj"></div>
+          <div class="cardx mca"><i class="bi bi-mortarboard"></i><div><b>MCA Graduate</b><span>VIT, Vellore</span><em>8.44 CGPA</em></div></div>
+          <div class="hnote n2">Turning<br>Ideas into<br>Real Solutions<svg viewBox="0 0 110 40"><path d="M2 36 C40 34 80 24 106 8 M94 6 L106 8 L100 19"/></svg></div>
+        </div>
+      </div>
+    </div>
+    <div class="goalbar reveal">
+      <div class="goal"><i class="bi bi-bullseye"></i><div><b>My Goal</b><span>Become a skilled Full-Stack Developer and contribute to innovative products.</span></div></div>
+      <div class="gstat"><i class="bi bi-briefcase"></i><div><b><span class="count" data-to="5">5</span>+</b><span>Projects Built</span></div></div>
+      <div class="gstat"><i class="bi bi-mortarboard"></i><div><b><span class="count" data-to="2">2</span></b><span>Degree Completed</span></div></div>
+      <div class="gstat"><i class="bi bi-code-slash"></i><div><b><span class="count" data-to="10">10</span>+</b><span>Technologies Learned</span></div></div>
+      <div class="hnote n3 d-none d-xl-block">Let's build<br>something great<svg viewBox="0 0 110 40"><path d="M2 8 C40 12 80 10 104 6 M94 0 L106 6 L96 14"/></svg></div>
+    </div>
+  </div>
+</section>
+
+<!-- ABOUT -->
+<section id="about" class="sec" data-hint="A little about me">
+  <div class="container-xl"><div class="row g-4 align-items-center">
+    <div class="col-lg-5 reveal">
+      <span class="num">01</span> <span class="text-muted small">About Me</span>
+      <h2 class="h1 fw-bold mt-2">Turning Ideas Into<br><span class="text-brand">Real Solutions</span></h2>
+      <p class="text-muted">I'm Baskar Raj, a passionate Full-Stack Developer with hands-on experience in the MERN stack. I love building web applications, exploring new technologies and solving real-world problems through clean code and creative thinking.</p>
+      <div class="row g-3 small my-3">
+        <div class="col-6"><i class="bi bi-mortarboard text-brand"></i> <b>MCA Graduate</b><br><span class="text-muted ms-4">VIT Vellore</span></div>
+        <div class="col-6"><i class="bi bi-geo-alt text-brand"></i> <b>Location</b><br><span class="text-muted ms-4">Vellore, Tamil Nadu</span></div>
+        <div class="col-6"><i class="bi bi-translate text-brand"></i> <b>Languages</b><br><span class="text-muted ms-4">Tamil, English</span></div>
+      </div>
+      <a href="#journey" class="btn btn-brand btn-pill btn-sm">More About Me <i class="bi bi-arrow-right ms-1"></i></a>
+    </div>
+    <div class="col-lg-4 reveal d-delay"><div id="traits" class="d-grid gap-3"></div></div>
+    <div class="col-lg-3 reveal d-delay2 text-center"><div class="mount"><span class="note">Let's explore<br>my journey...</span><i class="bi bi-triangle-fill"></i><i class="bi bi-triangle-fill s"></i></div><div class="note mt-2">Small steps, Big dreams</div></div>
+  </div></div>
+</section>
+
+<!-- JOURNEY -->
+<section id="journey" class="sec" data-hint="My academic path">
+  <div class="container-xl">
+    <div class="reveal mb-4"><span class="num">02</span><h2 class="h1 fw-bold d-inline ms-2">My Journey</h2><p class="text-muted small ms-5 mb-0">From Dreams to Achievements. Tap a milestone to see the details.</p></div>
+    <div class="row g-4 align-items-center">
+      <div class="col-lg-7"><div class="journey reveal"><svg viewBox="0 0 900 260" preserveAspectRatio="none"><path id="road" d="M10 230 C150 250 160 110 300 150 S470 230 580 120 S780 60 890 70"/></svg><div id="stops"></div><i class="bi bi-person-walking walker" id="walker"></i></div></div>
+      <div class="col-lg-5"><div class="cardx jcard reveal d-delay" id="jCard" aria-live="polite"></div></div>
+    </div>
+  </div>
+</section>
+
+<!-- SKILLS -->
+<section id="skills" class="sec" data-hint="Tools I build with">
+  <div class="container-xl"><div class="row g-4">
+    <div class="col-lg-4 reveal"><span class="num">03</span><h2 class="h1 fw-bold d-inline ms-2">My Skills</h2>
+      <p class="text-muted small mt-1">Tools I Use, Skills I Build With</p>
+      <p class="text-muted">I work with modern technologies to build scalable, efficient and user-friendly applications.</p>
+      <a href="#certs" class="btn btn-brand btn-pill btn-sm">View All Skills <i class="bi bi-arrow-right ms-1"></i></a></div>
+    <div class="col-lg-5"><div class="row g-3" id="skillGrid"></div></div>
+    <div class="col-lg-3 reveal"><pre class="code"><code>const build = (idea) =&gt; {
+  return (
+    &lt;WebApp
+      scalable
+      efficient
+      userFriendly
+    /&gt;
+  );
+};</code></pre><div class="note text-end">Code. Create. Innovate.</div></div>
+  </div></div>
+</section>
+
+<!-- CERTIFICATIONS -->
+<section id="certs" class="sec" data-hint="Always learning">
+  <div class="container-xl">
+    <div class="row g-3 align-items-end mb-4 reveal">
+      <div class="col-lg-7"><span class="num">04</span><h2 class="h1 fw-bold d-inline ms-2">Certifications</h2>
+        <p class="text-muted small mt-1 mb-1">Continuous Learning, Continuous Growth</p>
+        <p class="text-muted mb-0">Open any certificate for a full-size view with the credential ID, skills gained and topics covered.</p></div>
+      <div class="col-lg-5 text-lg-end"><div class="cstats"><div><b>3</b><span>Certificates</span></div><div><b>3</b><span>Issuers</span></div><div><b>15+</b><span>Skills gained</span></div></div></div>
+    </div>
+    <div class="row g-4" id="certGrid"></div>
+  </div>
+  <div class="modal fade" id="certModal" tabindex="-1" aria-hidden="true"><div class="modal-dialog modal-xl modal-dialog-centered modal-dialog-scrollable"><div class="modal-content cardx"><button class="btn-close ms-auto m-3 mb-0" data-bs-dismiss="modal" aria-label="Close"></button><div class="modal-body"><div class="row g-4 align-items-center" id="certView"></div></div></div></div></div>
+</section>
+
+<!-- PROJECTS -->
+<section id="projects" class="sec" data-hint="Things I've built">
+  <div class="container-xl">
+    <div class="row g-3 align-items-end mb-4 reveal">
+      <div class="col-lg-7"><span class="num">05</span><h2 class="h1 fw-bold d-inline ms-2">My Projects</h2>
+        <p class="text-muted small mt-1 mb-1">Ideas, Code, Impact</p>
+        <p class="text-muted mb-0">Full-stack web apps and AI/ML systems with clean code, scalable architecture and practical use cases. Open any card for the full case study.</p></div>
+      <div class="col-lg-5 text-lg-end"><div class="filters" id="pFilters"></div></div>
+    </div>
+    <div class="row g-4" id="projGrid"></div>
+  </div>
+</section>
+
+<!-- CONTACT -->
+<section id="contact" class="sec" data-hint="Let's talk!">
+  <div class="container-xl"><div class="row g-4">
+    <div class="col-lg-5 reveal"><span class="num">06</span><h2 class="h1 fw-bold d-inline ms-2">Get In Touch</h2>
+      <p class="text-muted small mt-1">Let's Work Together</p>
+      <p class="text-muted">I'm open to new opportunities, collaborations and exciting projects. Feel free to reach out!</p>
+      <ul class="list-unstyled contact">
+        <li><i class="bi bi-envelope"></i><div><small>Email</small><br>baskarraj.official@gmail.com</div></li>
+        <li><i class="bi bi-telephone"></i><div><small>Phone</small><br>+91 93441 58229</div></li>
+        <li><i class="bi bi-geo-alt"></i><div><small>Location</small><br>Vellore, Tamil Nadu</div></li></ul></div>
+    <div class="col-lg-7 reveal d-delay">
+      <form id="form" class="cardx p-4 needs-validation" novalidate>
+        <div class="row g-3">
+          <div class="col-md-6"><input class="form-control" placeholder="Your Name" required></div>
+          <div class="col-md-6"><input type="email" class="form-control" placeholder="Your Email" required></div>
+          <div class="col-12"><input class="form-control" placeholder="Subject" required></div>
+          <div class="col-12"><textarea class="form-control" rows="4" placeholder="Message" required></textarea></div>
+          <div class="col-12"><button class="btn btn-brand btn-pill">Send Message <i class="bi bi-send ms-1"></i></button> <span id="sent" class="ms-2 text-success small"></span></div>
+        </div></form>
+    </div>
+  </div></div>
+</section>
+</main>
+
+<footer class="foot"><div class="container-xl d-flex flex-wrap justify-content-between gap-2 small text-muted">
+  <span><b class="text-body">BASKAR RAJ</b> Full-Stack Developer | MERN Stack</span>
+  <span class="fs-5 d-flex gap-3"><a href="https://www.linkedin.com/in/baskar-raj-bj/"><i class="bi bi-linkedin"></a></i><a href="https://github.com/Baskar-raj"><i class="bi bi-github"></i></a><i class="bi bi-twitter-x"></i><a href=""><i class="bi bi-instagram"></i></a></span>
+  <span>© 2026 Baskar Raj. All rights reserved.</span></div></footer>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+<script src="js/projects-data.js"></script>
+<script src="js/main.js"></script>
+</body>
+</html>
